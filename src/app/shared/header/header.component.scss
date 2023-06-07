@@ -1,0 +1,139 @@
+@import "src/assets/styles/colors";
+
+.header {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  height: 60;
+  display: flex;
+  align-items: center;
+  background-color: $main;
+  color: $white;
+  font-weight: 600;
+}
+.hover_logo {
+  margin: 0 20px;
+  border-radius: 50%;
+  figure{
+    border-radius: 50%;
+    cursor: pointer;
+    .logo:hover {
+      opacity: 0.8;
+    }
+  }
+}
+figure {
+  position: relative;
+  width: 50px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.hover_logo figure {
+  position: relative;
+}
+.hover_logo figure::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(248, 2, 228, 0) 0%,
+    rgba(126, 3, 163, 0.5) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(210, 0, 230, 0) 0%,
+    rgba(116, 0, 131, 0.5) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.hover_logo figure:hover::before {
+  -webkit-animation: shine 0.85s;
+  animation: shine 0.85s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+.menue_side {
+  position: absolute;
+  right: 10px;
+  ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    i {
+      margin: 0 10px 0 5px;
+      color: $light-grey
+    }
+  }
+  ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-text-stroke: 0.7px var(--clr);
+    cursor: pointer;
+  }
+  ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    color: var(--clr);
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  ul li a:hover::before {
+    width: 100%;
+  }
+}
+.sidebar{
+  position: unset !important;
+  ul {
+    flex-direction: column !important;
+  }
+}
+::ng-deep .p-sidebar{
+  background: $main;
+}
+::ng-deep .p-sidebar-close-icon{
+  color: $white;
+}
+::ng-deep .p-sidebar-header {
+  height: 40px;
+}
+::ng-deep .p-sidebar-content{
+  height: 100%;
+}
+::ng-deep .p-sidebar-footer{
+  display: none;
+}

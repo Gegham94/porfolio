@@ -1,0 +1,20 @@
+[
+  {
+    "title": "WeDoApps LLC",
+    "possition": "Angular 2 developer",
+    "location_type": "Offline",
+    "employement_type": "Full time",
+    "working_period": "Aug. 2020 - May. 2021",
+    "icon": "/assets/icons/wda-logo.png",
+    "alt": "WDA logo"
+  },
+  {
+    "title": "BrainFors LLC",
+    "possition": "Angular 2 developer",
+    "location_type": "Offline",
+    "employement_type": "Full time",
+    "working_period": "Oct. 2021 - Jan. 2023",
+    "icon": "/assets/icons/bf-logo.png",
+    "alt": "BF logo"
+  }
+]

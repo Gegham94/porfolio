@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Smart CM",
+    "description": "This project is admin-dashboard for BrainFors LLC. Here users can create their own event, send invitations of events to other users and also they can take day-offs or hourly-leaves.",
+    "icon": "/assets/projects-logo/smart-cm-logo.png",
+    "alt": "Smart CM screen",
+    "github_link": "https://github.com/Gegham94/cm-smart",
+    "images": [
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-1.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-2.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-3.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-4.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-5.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-6.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-7.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-8.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-9.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-10.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-11.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-12.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-13.png" },
+      { "backdrop_path": "/assets/projects-images/smart-cm/screen-14.png" }
+    ]
+  },
+  {
+    "title": "NG Movies",
+    "description": "This project is online movies. Users can go to the web site without signup/login and choose prefer movie or tv shows to watch them.",
+    "icon": "/assets/projects-logo/ng-movie-logo.png",
+    "alt": "NG Movies screen",
+    "github_link": "https://github.com/Gegham94/NG-Movies",
+    "images": [
+      { "backdrop_path": "/assets/projects-images/ng-movies/screen-1.png" },
+      { "backdrop_path": "/assets/projects-images/ng-movies/screen-2.png" },
+      { "backdrop_path": "/assets/projects-images/ng-movies/screen-3.png" },
+      { "backdrop_path": "/assets/projects-images/ng-movies/screen-4.png" },
+      { "backdrop_path": "/assets/projects-images/ng-movies/screen-5.png" },
+      { "backdrop_path": "/assets/projects-images/ng-movies/screen-6.png" },
+      { "backdrop_path": "/assets/projects-images/ng-movies/screen-7.png" },
+      { "backdrop_path": "/assets/projects-images/ng-movies/screen-8.png" },
+      { "backdrop_path": "/assets/projects-images/ng-movies/screen-9.png" },
+      { "backdrop_path": "/assets/projects-images/ng-movies/screen-10.png" },
+      { "backdrop_path": "/assets/projects-images/ng-movies/screen-11.png" }
+    ]
+  },
+  {
+    "title": "UpStart",
+    "description": "This project about courses, where users can take or buy online/offline courses.There are many user roles (trainer, student, consultation, training center) that can user create profile and to participate to events.",
+    "icon": "/assets/projects-logo/upstart-logo.png",
+    "alt": "UpStart screen",
+    "github_link": "https://github.com/Gegham94/upstart-website",
+    "images": [
+      { "backdrop_path": "/assets/projects-images/upstart/screen-1.png" },
+      { "backdrop_path": "/assets/projects-images/upstart/screen-2.png" },
+      { "backdrop_path": "/assets/projects-images/upstart/screen-3.png" },
+      { "backdrop_path": "/assets/projects-images/upstart/screen-4.png" },
+      { "backdrop_path": "/assets/projects-images/upstart/screen-5.png" },
+      { "backdrop_path": "/assets/projects-images/upstart/screen-6.png" },
+      { "backdrop_path": "/assets/projects-images/upstart/screen-7.png" },
+      { "backdrop_path": "/assets/projects-images/upstart/screen-8.png" },
+      { "backdrop_path": "/assets/projects-images/upstart/screen-9.png" },
+      { "backdrop_path": "/assets/projects-images/upstart/screen-10.png" },
+      { "backdrop_path": "/assets/projects-images/upstart/screen-11.png" }
+    ]
+  }
+]

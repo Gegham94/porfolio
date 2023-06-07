@@ -1,0 +1,49 @@
+<!-- Header -->
+<div class="header" role="banner" [@slideInOut]="headerOpen">
+  <div class="hover_logo">
+    <figure routerLink="/"><img width="50" alt="Profile Logo" class="logo" src="/assets/icons/avatar.jpg"/></figure>
+  </div>
+  <div class="menue_side" *ngIf="!isSidebar; else sidebarModel">
+    <ul>
+      <li style="--clr:#ffffff;">
+        <h2><a data-text="&nbsp;VIDEOS" (click)="scrollToContent('videos')">&nbsp;VIDEOS&nbsp;</a></h2>
+      </li>
+      <li style="--clr:#ffffff;">
+        <h2><a data-text="&nbsp;GALLERY" (click)="scrollToContent('gallery')">&nbsp;GALLERY&nbsp;</a></h2>
+      </li>
+      <li style="--clr:#ffffff;">
+        <h2><a data-text="&nbsp;EXPERIENCE" (click)="scrollToContent('experience')">&nbsp;EXPERIENCE&nbsp;</a></h2>
+      </li>
+      <li style="--clr:#ffffff;">
+        <h2><a data-text="&nbsp;PROJECTS" (click)="scrollToContent('projects')">&nbsp;PROJECTS&nbsp;</a></h2>
+      </li>
+    </ul>
+  </div>
+  <ng-template #sidebarModel>
+    <div class="menue_side">
+      <p-button type="button" (click)="visibleSidebar=true" icon="pi pi-align-justify"></p-button>
+    </div>
+  </ng-template>
+</div>
+<p-sidebar [(visible)]="visibleSidebar" [style]="{width:'200px'}" position="right" [baseZIndex]="999999">
+  <div class="menue_side sidebar">
+    <ul>
+      <li style="--clr:#ffffff;">
+        <i class="pi pi-video" style="font-size: 1.7rem"></i>
+        <h2><a data-text="&nbsp;VIDEOS" (click)="scrollToContent('videos')">&nbsp;VIDEOS&nbsp;</a></h2>
+      </li>
+      <li style="--clr:#ffffff;">
+        <i class="pi pi-image" style="font-size: 1.7rem"></i>
+        <h2><a data-text="&nbsp;GALLERY" (click)="scrollToContent('gallery')">&nbsp;GALLERY&nbsp;</a></h2>
+      </li>
+      <li style="--clr:#ffffff;">
+        <i class="pi pi-book" style="font-size: 1.7rem"></i>
+        <h2><a data-text="&nbsp;EXPERIENCE" (click)="scrollToContent('experience')">&nbsp;EXPERIENCE&nbsp;</a></h2>
+      </li>
+      <li style="--clr:#ffffff;">
+        <i class="pi pi-desktop" style="font-size: 1.7rem"></i>
+        <h2><a data-text="&nbsp;PROJECTS" (click)="scrollToContent('projects')">&nbsp;PROJECTS&nbsp;</a></h2>
+      </li>
+    </ul>
+  </div>
+</p-sidebar>

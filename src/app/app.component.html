@@ -1,0 +1,10 @@
+<div #target>
+  <app-header></app-header>
+  <div class="content" role="main">
+    <router-outlet></router-outlet>
+    <div class="scrollup" [ngStyle]="{'display': showScrollUpButton ? 'block' : 'none' }" (click)="scrollToElement(target)">
+      <a><i class="pi pi-angle-up"></i></a>
+    </div>
+  </div>
+  <app-footer></app-footer><ng-container> </ng-container
+></div>

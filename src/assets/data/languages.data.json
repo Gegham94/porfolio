@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Armenian",
+    "level": "native",
+    "percent": 100,
+    "icon": "/assets/flags/am-flag.png"
+  },
+  {
+    "title": "Russian",
+    "level": "advanced",
+    "percent": 90,
+    "icon": "/assets/flags/ru-flag.png"
+  },
+  {
+    "title": "English",
+    "level": "intermediate",
+    "percent": 50,
+    "icon": "/assets/flags/en-flag.png"
+  }
+]

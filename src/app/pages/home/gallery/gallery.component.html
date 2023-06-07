@@ -1,0 +1,74 @@
+<div class="bg">
+  <div class="content-body" >
+      <div class="card">
+        <img
+          (click)="showPreview(item.backdrop_path)"
+          src="{{ item.backdrop_path }}"
+          class="card-img-top"
+          alt="Profile image"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text">{{ item.profession }}</p>
+        </div>
+      </div>
+    
+      <div class="gallery">
+        <p-carousel
+          [value]="galleryImages"
+          [numVisible]="4"
+          [numScroll]="4"
+          [circular]="false"
+          [responsiveOptions]="responsiveOptions"
+        >
+          <ng-template pTemplate="header">
+            <h4 class="gallery-title">Gallery Images</h4>
+          </ng-template>
+          <ng-template let-image pTemplate="item">
+            <div class="item">
+              <img
+                class="img"
+                (click)="showPreview(image.backdrop_path)"
+                src="{{ image.backdrop_path }}"
+                alt="Gallery image"
+              />
+            </div>
+          </ng-template>
+        </p-carousel>
+        <hr>
+        <p-carousel
+          [value]="armyImages"
+          [numVisible]="4"
+          [numScroll]="4"
+          [circular]="false"
+          [responsiveOptions]="responsiveOptions"
+        >
+          <ng-template pTemplate="header">
+            <h4 class="gallery-title">Army Images</h4>
+          </ng-template>
+          <ng-template let-image pTemplate="item">
+            <div class="item">
+              <img
+                class="img"
+                (click)="showPreview(image.backdrop_path)"
+                src="{{ image.backdrop_path }}"
+                alt="Gallery image"
+              />
+            </div>
+          </ng-template>
+        </p-carousel>
+      </div>
+      <p-dialog
+        [maximizable]="true"
+        [dismissableMask]="true"
+        [(visible)]="showImagePreview"
+        [modal]="true"
+        [style]="{ width: '90vw' }"
+        [baseZIndex]="100000"
+        [draggable]="false"
+        [resizable]="false"
+      >
+      <img class="preview" src="{{ previewImagePath }}" alt="Gallery image">
+      </p-dialog>
+  </div>
+</div>

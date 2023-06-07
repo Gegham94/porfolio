@@ -1,0 +1,159 @@
+<div class="content-body">
+  <div class="about">
+    <h2>Who I am ?</h2>
+    <p>
+      Hi there,I'm Gegham Harutyunyan from Armenia/Gyumri. I would like to
+      express my strong interest in the position as an Angular developer. I'm
+      worked on this position and I believe my experience and skills would make
+      me a great developer. I studied and worked in this position couple of
+      companies and for me it's more then just work.
+    </p>
+    <h2>What I do ?</h2>
+    <p>
+      I create websites that allow the user to experience your website in the
+      best and most appropriate way suited to the device they are using. In
+      addition to web development and online marketing. <br />
+      I am a very friendly person. I like to communicate with people and make
+      friends. In parallel with my work, I like to improve my knowledge in the
+      field of programming and go for a walk with my friends, attend various
+      events.
+    </p>
+  </div>
+  <div class="list-body">
+    <div class="experience list">
+      <div class="list-header" (click)="showHideSkills('experience')">
+        <div>
+          <i class="pi pi-book" style="font-size: 2rem"></i>
+          <span>Experience</span>
+        </div>
+        <div>
+          <i
+            *ngIf="isExperienceOpen; else experienceArrowUpModel"
+            class="pi pi-chevron-up"
+            style="font-size: 1rem"
+          ></i>
+          <ng-template #experienceArrowUpModel
+            ><i class="pi pi-chevron-down" style="font-size: 1rem"></i
+          ></ng-template>
+        </div>
+      </div>
+      <div class="list-content" [@slideInOutCarrer]="experienceView">
+          <div class="exp" *ngFor="let experience of experienceList">
+            <div>
+              <h4>{{ experience.title }}</h4>
+              <p class="role">{{ experience.possition }}</p>
+              <p>Location type - {{ experience.location_type }}</p>
+              <p>Employement type - {{ experience.employement_type }}</p>
+              <p>Working period - {{ experience.working_period }}</p>
+            </div>
+            <div class="logo">
+              <img [src]="experience.icon" [alt]="experience.alt" />
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="skills list">
+      <div class="list-header" (click)="showHideSkills('skills')">
+        <div>
+          <i class="pi pi-briefcase" style="font-size: 2rem"></i>
+          <span>Skills</span>
+        </div>
+        <div>
+          <i
+            *ngIf="isSkillsOpen; else skillsArrowUpModel"
+            class="pi pi-chevron-up"
+            style="font-size: 1rem"
+          ></i>
+          <ng-template #skillsArrowUpModel
+            ><i class="pi pi-chevron-down" style="font-size: 1rem"></i
+          ></ng-template>
+        </div>
+      </div>
+      <div class="list-content" [@slideInOutCarrer]="skillsView">
+          <div class="skill" *ngFor="let skills of skillsList">
+            <div class="skill-title">
+              <p>{{ skills.title }}</p>
+              <div class="percentage" [style.width.%]="skills.percent">
+                {{ skills.percent }}%
+              </div>
+            </div>
+            <img [src]="skills.icon" [alt]="skills.alt" />
+          </div>
+      </div>
+    </div>
+
+    <div class="languages list">
+      <div class="list-header" (click)="showHideSkills('languages')">
+        <div>
+          <i class="pi pi-language" style="font-size: 2rem"></i>
+          <span>Languages</span>
+        </div>
+        <div>
+          <i
+            *ngIf="isLanguagesOpen; else languageArrowUpModel"
+            class="pi pi-chevron-up"
+            style="font-size: 1rem"
+          ></i>
+          <ng-template #languageArrowUpModel
+            ><i class="pi pi-chevron-down" style="font-size: 1rem"></i
+          ></ng-template>
+        </div>
+      </div>
+      <div class="list-content" [@slideInOutCarrer]="languagesView">
+          <div class="skill" *ngFor="let languages of languagesList">
+            <div class="skill-title">
+              <p>{{ languages.title }} | {{ languages.level }}</p>
+              <div class="percentage" [style.width.%]="languages.percent">
+                {{ languages.percent }}%
+              </div>
+            </div>
+            <img [src]="languages.icon" [alt]="languages.alt" />
+          </div>
+      </div>
+    </div>
+
+    <div class="languages list">
+      <div class="list-header" (click)="showHideSkills('resume')">
+        <div>
+          <i class="pi pi-file-pdf" style="font-size: 2rem"></i>
+          <span>Resume</span>
+        </div>
+        <div>
+          <i
+            *ngIf="isResumeOpen; else resumeArrowUpModel"
+            class="pi pi-chevron-up"
+            style="font-size: 1rem"
+          ></i>
+          <ng-template #resumeArrowUpModel
+            ><i class="pi pi-chevron-down" style="font-size: 1rem"></i
+          ></ng-template>
+        </div>
+      </div>
+      <div class="list-content" [@slideInOutCarrer]="resumeView">
+        <div class="pdf-container">
+          <div class="pdf-actions">
+            <a
+              href="/assets/data/Gegham Harutyunyan-Resume.pdf"
+              pTooltip="Download PDF"
+              tooltipPosition="right"
+              download
+              ><i class="pi pi-download" style="font-size: 1rem"></i>
+            </a>
+            <a
+              href="/assets/data/Gegham Harutyunyan-Resume.pdf"
+              target="blank"
+              pTooltip="View full ccreen"
+              tooltipPosition="right"
+              ><i class="pi pi-eye" style="font-size: 1rem"></i>
+            </a>
+          </div>
+          <span>
+            <a><i class="pi pi-file-pdf" style="font-size: 1.25rem"></i></a>
+            Gegham Harutyunyan-Resume.pdf
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="bg">
+  <div class="content-body" >
+      <h4>MY TOP 3 PROJECTS I HAVE MADE</h4>
+
+      <div class="cards-content">
+        <p-tabView>
+          <p-tabPanel headerStyleClass="tabview-header" *ngFor="let project of projectsList" header="{{project.title}}">
+            <div class="card">
+              <div class="card-title">
+                <h5>{{project.title}}</h5>
+                <img [src]="project.icon" [alt]="project.alt">
+              </div>
+              <div class="card-description">
+                <span>{{project.description}}</span>
+              </div>
+              <div class="card-link">
+                <span>Github link`</span>
+                <a [href]="project.github_link" target="blank">{{project.github_link}}</a>
+              </div>
+            </div>
+            <div class="projects-slider">
+              <p-carousel
+              [value]="project.images"
+              [numVisible]="3"
+              [numScroll]="3"
+              [circular]="false"
+              [responsiveOptions]="responsiveOptions">
+                <ng-template let-image pTemplate="item">
+                  <div class="item">
+                    <img
+                      class="img"
+                      (click)="showPreview(image.backdrop_path)"
+                      src="{{ image.backdrop_path }}"
+                      alt="Gallery image"
+                    />
+                  </div>
+                </ng-template>
+              </p-carousel>
+            </div>
+            <p-dialog
+              [maximizable]="true"
+              [dismissableMask]="true"
+              [(visible)]="showImagePreview"
+              [modal]="true"
+              [style]="{ width: '90vw' }"
+              [baseZIndex]="100000"
+              [draggable]="false"
+              [resizable]="false"
+            >
+            <img class="preview" src="{{ previewImagePath }}" [alt]="project.alt">
+            </p-dialog>
+          </p-tabPanel>
+        </p-tabView>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+@import "src/assets/styles/colors";
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.scrollup{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid $lighter-grey;
+  opacity: .3;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #000;
+  z-index: 1000;
+  transition: opacity .3s, background-color .3s;
+  -moz-transition: opacity .3s, background-color .3s;
+  -webkit-transition: opacity .3s, background-color .3s;
+}
+.scrollup:hover {
+  background: $main;
+  opacity: 1;
+}
+.scrollup i {
+  font-size: 13px;
+  position: absolute;
+  opacity: 1;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  margin-top: -7px;
+  margin-left: -6px;
+  text-decoration: none;
+}

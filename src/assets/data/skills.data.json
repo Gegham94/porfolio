@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Java Script",
+    "percent": 80,
+    "icon": "/assets/icons/js-logo.png",
+    "alt": "JS logo"
+  },
+  {
+    "title": "Type Script",
+    "percent": 80,
+    "icon": "/assets/icons/ts-logo.png",
+    "alt": "TS logo"
+  },
+  {
+    "title": "Angular 2+",
+    "percent": 70,
+    "icon": "/assets/icons/ng-logo.png",
+    "alt": "Angular logo"
+  },
+  {
+    "title": "RxJS",
+    "percent": 70,
+    "icon": "/assets/icons/rxjs-logo.png",
+    "alt": "RxJS logo"
+  },
+  {
+    "title": "REST API's",
+    "percent": 70,
+    "icon": "/assets/icons/api-logo.png",
+    "alt": "Api logo"
+  },
+  {
+    "title": "HTML",
+    "percent": 90,
+    "icon": "/assets/icons/html-logo.png",
+    "alt": "HTML logo"
+  },
+  {
+    "title": "CSS",
+    "percent": 90,
+    "icon": "/assets/icons/css-logo.png",
+    "alt": "CSS logo"
+  },
+  {
+    "title": "SCSS/SASS",
+    "percent": 80,
+    "icon": "/assets/icons/scss-logo.png",
+    "alt": "SCSS logo"
+  },
+  {
+    "title": "JQuery",
+    "percent": 70,
+    "icon": "/assets/icons/jquery-logo.png",
+    "alt": "JQuery logo"
+  },
+  {
+    "title": "OOP",
+    "percent": 60,
+    "icon": "/assets/icons/oop-logo.png",
+    "alt": "OOP logo"
+  },
+  {
+    "title": "GIT",
+    "percent": 90,
+    "icon": "/assets/icons/git-logo.png",
+    "alt": "Git logo"
+  },
+  {
+    "title": "JIRA",
+    "percent": 90,
+    "icon": "/assets/icons/jira-logo.png",
+    "alt": "Jira logo"
+  },
+  {
+    "title": "Linux",
+    "percent": 80,
+    "icon": "/assets/icons/linux-logo.png",
+    "alt": "Linux logo"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "description": "MY greate WeDoApps LLC team.",
+    "title": "My memories",
+    "backdrop_path": "/assets/images/picture-1.jpg",
+    "capture_date": "05.27.2021"
+  },
+  {
+    "description": "Our excursion to Dentropark with colleagues from BrainFors LLC.",
+    "title": "My memories",
+    "backdrop_path": "/assets/images/picture-10.JPG",
+    "capture_date": "01.01.2020"
+  },
+  {
+    "description": "Trip to Parz lich and its forest.",
+    "title": "My memories",
+    "backdrop_path": "/assets/images/picture-5.jpg",
+    "capture_date": "11.24.2019"
+  },
+  {
+    "description": "We are with our friends in Tsaghkadzor.",
+    "title": "My memories",
+    "backdrop_path": "/assets/images/picture-15.jpg",
+    "capture_date": "05.15.2020"
+  },
+  {
+    "description": "This is a very old picture and honestдн I don’t remember where it is.",
+    "title": "My memories",
+    "backdrop_path": "/assets/images/picture-7.jpg",
+    "capture_date": "07.07.2011"
+  }
+]

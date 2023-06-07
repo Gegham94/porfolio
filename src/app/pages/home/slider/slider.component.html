@@ -1,0 +1,19 @@
+<div class="slider">
+    <ng-container *ngFor="let item of items; let i=index">
+      <div class="slide" *ngIf="i===currentSlideIndex" @slideFade>
+        <div class="slide-bg">
+          <img class="slide-bg-image" [src]="item.backdrop_path" [alt]="item.title">
+        </div>
+        <div class="slide-pane">
+          <h2 class="name">{{item.title}}</h2>
+          <div class="meta">
+            <div class="info">
+              <span>Picture date</span>
+              <span>{{item.capture_date | date: 'dd/MM/yyyy'}}</span>
+            </div>
+          </div>
+          <div class="desc mt-6">{{item.description}}</div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
